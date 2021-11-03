@@ -1,2 +1,2 @@
 # Snake-gaem
-snake game :))
+snake game :)
