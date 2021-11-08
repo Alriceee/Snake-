@@ -814,43 +814,6 @@ $(window).keyup(function(e) {
 	}
 });
             </script>
-            <style>
-              o {
-                position: absolute;
-              }
-            </style>
-<o><button onclick = "black()">
-            black background
-        </button>
-        <button onclick = "grey()">
-            grey background
-        </button>
-        <button onclick ="blue()">
-            blue background
-        </button>
-          </o>
-          
-        <script>
-            var el_up = document.getElementById("GFG_UP");
-            var el_down = document.getElementById("GFG_DOWN");
-            var str = "Click on button to change the background color";
-          
-            el_up.innerHTML = str;
-          
-            function changeColor(color) {
-                document.body.style.background = color;
-                document.button.style.background = color;
-            }
-            function black() {
-                changeColor('black');
-            }
-            function grey() {
-                changeColor('grey');
-            }
-            function blue() {
-                changeColor('blue');
-            }
-        </script>
        <p style="color: red" align="center">use W A S D or ARROW KEYS to move snake.</p>
        </body>
        </html>
