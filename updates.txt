@@ -4,12 +4,14 @@ Update #1: Added Arrow Key support. (I know I kept putting this off but I finall
 
 Update #2: Added a link to this page, (If it's not the raw data, email me at isaiah.lowder1@outlook.com)
 
-𝕀𝕥'𝕤 𝕥𝕙𝕒𝕥 𝕥𝕚𝕞𝕖 𝕠𝕗 𝕪𝕖𝕒𝕣, 𝕒𝕟𝕕 𝕥𝕙𝕚𝕤 𝕚𝕤 𝕘𝕠𝕟𝕟𝕒 𝕓𝕖 𝕓𝕒𝕕:
+Update #3:  Removed audio and ability to change background color.
+
+𝕀𝕥'𝕤 𝕥𝕙𝕒𝕥 𝕥𝕚𝕞𝕖 𝕠𝕗 𝕪𝕖𝕒𝕣, 𝕒𝕟𝕕 𝕥𝕙𝕚𝕤 𝕚𝕤 𝕘𝕠𝕟𝕟𝕒 𝕓𝕖 bad.
 -----------------------------------------------------------------------------
-Working on a christmas update, (will still have the original version as well.)
+Christmas Update 1: You already know, BUG FIXES.
 
-Yes I skipped thanksgiving and halloween, I didn't feel like doing anything for those.
+Christmas Update 2: The snake now randomly changes color.
 
-Christmas Theme will have a new wall option, (hopefully the wall color can be 2 colors at once.)
+Christmas Update 3: Removed audio and ability to change background color.
 
-The snake and apple will be 2 different colors this time, I may end up putting that update in the original version.
+Christmas Update 4: Added Snow :D
