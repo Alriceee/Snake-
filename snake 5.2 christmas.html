@@ -12,7 +12,7 @@ alert('Normal speed may get selected as slow. Please make sure to click normal s
 </style>
           <p>snake 5.2 (Christmas)</p>
                         <meta charset="UTF-8">
-                                 <title>Snake 5.2 (Christmas)</title>
+                                 <title>Snake 5.3</title>
 <link rel="icon" href="snake/favicon/snake.ico" type="image/ico" >
                  <style type="text/css">
                      @import url("https://fonts.googleapis.com/css?family=VT323");
@@ -35,8 +35,8 @@ alert('Normal speed may get selected as slow. Please make sure to click normal s
           }
           
           p{
-          color: red;
-          text-shadow: 4px 4px 4px green;
+          color: blue;
+          text-shadow: 4px 4px 4px red;
             
           }
           
@@ -101,9 +101,9 @@ alert('Normal speed may get selected as slow. Please make sure to click normal s
                 font-size: 25px;
                                 -webkit-animation: logo-ani 1ms linear ;
                         animation: logo-ani 1ms linear ;
-                color: red;
+                color: blue;
                 text-align: right;
-                text-shadow: 4px 4px 4px green;
+                text-shadow: 4px 4px 4px red;
             }
             .score_value{
                 font-size: inherit;
@@ -313,7 +313,7 @@ text-shadow: 4px 4px 4px red;
 @keyframes color-change {
 0% { color: red; }
 50% { color: green; }
-100% { color: red; }
+100% { color: blue; }
                 }
                 </style>
                             <style>
@@ -326,12 +326,12 @@ text-shadow: 4px 4px 4px red;
 @keyframes color-change {
 0% { color: red; }
 50% { color: green; }
-100% { color: red; }
+100% { color: blue; }
                 }
                 </style>
 <br/>
 <header class="wrap">
-<p class="score">Apples Eaten: <span id="score_value">99</span></p>
+<p class="score">Apples Eaten: <span id="score_value">0</span></p>
 
             </header>
             <canvas class="wrap" id="snake" width="420" height="420" tabindex="1"></canvas>
@@ -815,46 +815,6 @@ $(window).keyup(function(e) {
 });
             </script>
        <p style="color: red" align="center">use W A S D or ARROW KEYS to move snake.</p>
-       <a style="color: red" href="https://raw.githubusercontent.com/Alriceee/Snake-gaem/main/updates.txt" align="center">updates</a>
-       <div class="snow">
-<style>
-.editor-stage .snow {
-  height:50px;
-  background: #fff;
-}
-.snow{
-  position:fixed;
-  pointer-events:none;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-  height:100vh;
-  background: none;
-  background-image: url('https://s3-eu-west-1.amazonaws.com/static-ressources/s1.png'), url('https://s3-eu-west-1.amazonaws.com/static-ressources/s2.png'), url('https://s3-eu-west-1.amazonaws.com/static-ressources/s3.png');
-  z-index:100;
-  -webkit-animation: snow 10s linear infinite;
-  -moz-animation: snow 10s linear infinite;
-  -ms-animation: snow 10s linear infinite;
-  animation: snow 10s linear infinite;
-}
-@keyframes snow {
-  100% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-  100% {background-position: 500px 500px, 100px 200px, 100px 150px;}
-}
-@-moz-keyframes snow {
-  100% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-  50% {background-position: 500px 500px, 100px 200px, 100px 150px;}
-}
-@-webkit-keyframes snow {
-  100% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-  100% {background-position: 500px 500px, 100px 200px, 100px 150px;}
-}
-@-ms-keyframes snow {
-  100% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-  100% {background-position: 500px 500px, 100px 200px, 100px 150px;}
-}
-</style>
-</div>
+       <a style="color: red" href="https://raw.githubusercontent.com/Alriceee/Snake-gaem/main/updates.txt" align="center" target="_blank">updates</a>
        </body>
        </html>
