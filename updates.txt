@@ -1,9 +1,0 @@
-﻿There isn't really a point of this, but you know? Who cares?
------------------------------------------------------------------------------
-Update #1: Removed christmas theme.
-
-Update #2: More bug fixes because of java script.
-
-Update #3: Embed the hmtl into a node.js website: https://TallSufficientInsurance.alriceee.repl.co
-
-IMPORTANT: If website doesn't work, go to this link and run it: https://replit.com/@Alriceee/TallSufficientInsurance?v=1
