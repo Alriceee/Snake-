@@ -1,10 +1,13 @@
 # Not your normal readme.md
-you thought this was a normal readme.md huh? no nerd. it doesnt exist. just shut up and download snake. 
-still not downloaded?
-you got slow internet?
-bro. hurry up.
-Please know how to run an html file.
-used visual studio code + caret + npp (linux) to code.
+you thought this was a normal readme.md huh? <br/>
+no nerd. <br/>
+it doesnt exist. <br/>
+just shut up and download snake. <br/> 
+still not downloaded? <br/>
+you got slow internet? <br/>
+bro. hurry up. <br/>
+Please know how to run an html file. <br/>
+used visual studio code + caret + npp (linux) to code. <br/> <br/> <br/> <br/> <br/>
 
 
 
