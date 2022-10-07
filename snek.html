@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <html>
 
@@ -8,9 +9,9 @@
       color: blue;
     }
   </style>
-  <p>Snake 6.1</p>
+  <p>Snake 6.3</p>
   <meta charset="UTF-8">
-  <title>Snake 6.1</title>
+  <title>Snake 6.3</title>
   <link rel="icon" href="snake/favicon/snake.ico" type="image/ico">
   <style type="text/css">
     @import url("https://fonts.googleapis.com/css?family=VT323");
@@ -41,11 +42,12 @@
       margin-right: auto;
     }
 
-    p {
-      color: blue;
 
+    k {
+      font-size: 20px;
+      color: red;
+      margin-bottom: auto;
     }
-
     div.a {
       color: #000000;
       text-align: center;
@@ -209,74 +211,24 @@
       text-align: center;
       margin-left: auto;
       margin-right: auto;
-      -webkit-animation-name: color-change;
-      -webkit-animation-duration: 35000ms;
-      -webkit-animation-iteration-count: infinite;
-      -webkit-animation-timing-function: linear;
-      -moz-animation-name: spin;
-      -moz-animation-duration: 35000ms;
-      -moz-animation-iteration-count: infinite;
-      -moz-animation-timing-function: linear;
-      -ms-animation-name: spin;
-      -ms-animation-duration: 35000ms;
-      -ms-animation-iteration-count: infinite;
-      -ms-animation-timing-function: linear;
-
-      animation-name: spin;
-      animation-duration: 35000ms;
-      animation-iteration-count: infinite;
-      animation-timing-function: linear;
-    }
-
-    @-ms-keyframes spin {
-      from {
-        -ms-transform: rotate(0deg);
-      }
-
-      to {
-        -ms-transform: rotate(90deg);
-      }
-    }
-
-    @-moz-keyframes spin {
-      from {
-        -moz-transform: rotate(0deg);
-      }
-
-      to {
-        -moz-transform: rotate(90deg);
-      }
-    }
-
-    @-webkit-keyframes spin {
-      from {
-        -webkit-transform: rotate(0deg);
-      }
-
-      to {
-        -webkit-transform: rotate(90deg);
-      }
-    }
-
-    @keyframes spin {
-      from {
-
-        transform: rotate(0deg);
-      }
-
-      to {
-
-        transform: rotate(123deg);
-      }
-    }
-    }
-
-      {
       margin-bottom: 50px;
       cursor: help;
       color: blue;
-      text-shadow: 4px 4px 4px red;
-    }
+      animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
 
     #gameover p {
 
@@ -330,7 +282,7 @@
 
     #setting input:checked+label {
 
-      background-color: #000fffz;
+      background-color: #000fff;
       color: #FFFFFF;
     }
 
@@ -406,21 +358,22 @@
     <a id="newgame_setting">new game</a>
     <ul>
       <p type="list">Speed:
-        <li><input id="speed2" type="radio" name="speed" value="60" />
-          <label for="speed2">|||Slow|||</label>
+        <li>
+          <input id="speedSLOW" type="radio" name="speed" value="100"/>
+          <label for="speedSLOW">super slow.</label>
+          <input id="speed2" type="radio" name="speed" value="60" />
+          <label for="speed2">Slow</label>
           <input id="speed3" type="radio" name="speed" value="45" checked />
-          <label for="speed3" checked>|||Normal|||</label>
+          <label for="speed3">Normal</label>
           <input id="speed4" type="radio" name="speed" value="30" />
-          <label for="speed4">|||Fast|||</label>
+          <label for="speed4">Fast</label>
         </li>
 
       <p>Wall:
         <li><input id="wallon" type="radio" name="wall" value="1" checked />
-          <label for="wallon">|||on|||</label>
+          <label for="wallon">on</label>
           <input id="walloff" type="radio" name="wall" value="0" />
-          <label for="walloff">|||off|||</label>
-          <input id="wallblue" type="radio" name="wall" value="2" />
-          <label for="wallblue">|||off (black)|||</label>
+          <label for="walloff">off</label>
         </li>
     </ul>
   </div>
@@ -430,6 +383,8 @@
 
     <a id="newgame_menu">Play</a>
     <a id="setting_menu">Settings</a>
+
+    <k style="color: red" align="bottom">use W A S D or ARROW KEYS to move snake.</k>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script>
@@ -710,9 +665,10 @@
       /////////////////////////////////////////////////////////////
 
       // Change the snake speed...
-      // 999 = slow
-      // 100 = normal
-      // 50 = fast
+      // 100 = super slow
+      // 60 = slow
+      // 45 = normal
+      // 3o = fast
       var setSnakeSpeed = function (speed_value) {
         snake_speed = speed_value;
       };
@@ -731,7 +687,6 @@
 
         }
       };
-
       /////////////////////////////////////////////////////////////
 
       // 0 for the game
@@ -891,10 +846,6 @@
     });
     console.log(navigator.getGamepads());
   </script>
-  <p style="color: red" align="center">use W A S D or ARROW KEYS to move snake.</p>
   </body>
 
 </html>
-
-<script>
-  //Made by me. clearly. For the love of god if you steal my code I will hunt you down. Just don't lmao. (me = Alricee, ofc.)
