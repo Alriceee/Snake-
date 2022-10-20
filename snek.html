@@ -1,4 +1,3 @@
-
 <!DOCTYPE HTML>
 <html>
 
@@ -9,9 +8,9 @@
       color: blue;
     }
   </style>
-  <p>Snake 6.3</p>
+  <p>Snake v7.0</p>
   <meta charset="UTF-8">
-  <title>Snake 6.3</title>
+  <title>Snake v7.0</title>
   <link rel="icon" href="snake/favicon/snake.ico" type="image/ico">
   <style type="text/css">
     @import url("https://fonts.googleapis.com/css?family=VT323");
@@ -48,6 +47,7 @@
       color: red;
       margin-bottom: auto;
     }
+
     div.a {
       color: #000000;
       text-align: center;
@@ -102,7 +102,6 @@
       -webkit-animation: logo-ani 1ms linear;
       animation: logo-ani 1ms linear;
       margin-bottom: 30px;
-      cursor: help;
 
     }
 
@@ -158,7 +157,6 @@
       -webkit-animation: logo-ani 1000ms ease-in infinite;
       animation: logo-ani 1000ms ease-in infinite;
       margin-bottom: 30px;
-      cursor: help;
 
     }
 
@@ -198,7 +196,6 @@
       text-align: center;
       font-size: 30px;
       color: blue;
-      cursor: wait
     }
 
     li {
@@ -215,20 +212,20 @@
       cursor: help;
       color: blue;
       animation-duration: 3s;
-  animation-name: slidein;
-}
+      animation-name: slidein;
+    }
 
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
+    @keyframes slidein {
+      from {
+        margin-left: 100%;
+        width: 300%;
+      }
 
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+    }
 
     #gameover p {
 
@@ -248,7 +245,6 @@
       font-size: 30px;
       color: red;
       text-align: center;
-      cursor: wait;
     }
 
     #setting h2 {
@@ -359,7 +355,7 @@
     <ul>
       <p type="list">Speed:
         <li>
-          <input id="speedSLOW" type="radio" name="speed" value="100"/>
+          <input id="speedSLOW" type="radio" name="speed" value="100" />
           <label for="speedSLOW">super slow.</label>
           <input id="speed2" type="radio" name="speed" value="60" />
           <label for="speed2">Slow</label>
@@ -380,11 +376,23 @@
   <!-- Main Menu Screen -->
   <div id="menu">
     <b>Snake</b>
-
+<style>
+.buttoncolor {
+  background-color: black;
+  border: none;
+  color: red;
+  text-align: center;
+  font-size: 20px;
+}
+</style>
     <a id="newgame_menu">Play</a>
     <a id="setting_menu">Settings</a>
-
-    <k style="color: red" align="bottom">use W A S D or ARROW KEYS to move snake.</k>
+<script>
+  function onClick() {
+    alert("Use W A S D or arrow keys to move snake")
+  }
+</script>
+    <button class="buttoncolor" align="bottom" onclick="onClick()">Controls (click me!)</button>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script>
@@ -480,24 +488,6 @@
             } else {
 
               if (key == 37 && snake_dir != 1) {
-                snake_next_dir = 3;
-              }
-            }
-          }
-        }
-        if (key == gamepad.buttons[12].pressed && snake_dir != 2) {
-          snake_next_dir = 0;
-        } else {
-
-          if (key == gamepad.buttons[15].pressed && snake_dir != 3) {
-            snake_next_dir = 1;
-          } else {
-
-            if (key == gamepad.buttons[13].pressed && snake_dir != 0) {
-              snake_next_dir = 2;
-            } else {
-
-              if (key == gamepad.buttons[14].pressed && snake_dir != 1) {
                 snake_next_dir = 3;
               }
             }
