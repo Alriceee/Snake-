@@ -1,6 +1,6 @@
 # Not your normal readme.md
 ## (clearly github removed my other releases. so it skips from 5.2 to 6.something to 6.3) <br/>
-### I'll add christmas snake and stop removing it, it needs to stay tbh. (christmas snake will have snake color alternating between red and green.)
+### I'll add christmas snake and stop removing it, it needs to stay tbh.
 you thought this was a normal readme.md? <br/>
 yeah your right. it probably is. To be honest, i'm mad at github for removing my other releases. <br/>
 This has been a project sense what? 2017? 2018? I am very proud of how far snake became for me. <br/>
