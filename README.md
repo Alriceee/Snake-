@@ -1,8 +1,8 @@
-# Not your normal readme.md
-## (clearly github removed my other releases. so it skips from 5.2 to 6.something to 6.3) <br/>
-### I'll add christmas snake and stop removing it, it needs to stay tbh.
-you thought this was a normal readme.md? <br/>
-yeah your right. it probably is. To be honest, i'm mad at github for removing my other releases. <br/>
+# _Smake_
+##
+###
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=16D400&size=25&width=770&lines=HTML+Snake+v7)](https://git.io/typing-svg)
+###
 This has been a project sense what? 2017? 2018? I am very proud of how far snake became for me. <br/>
 I really only got into coding because of something called "searchy web" (dead project, not even on google anymore.) It was a fun project to work on, and it was mainly ment for bypassing websites when I was ip banned for no reason. <br/>
 But v6.3 will go to v7.0 then snake won't receive anymore major updates. Just bug fixes. <br/>
