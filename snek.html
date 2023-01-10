@@ -1,344 +1,348 @@
 <!DOCTYPE HTML>
-<html>
+<style>
+  .lolcursor {
+    cursor: url('assets/wii.cur'), auto
+  }
+</style>
+<div class="lolcursor">
+  <html>
 
-<head>
-  <style>
-    p {
-      font-size: 20px;
-      color: blue;
-    }
-  </style>
-  <p>Snake v7.0</p>
-  <meta charset="UTF-8">
-  <title>Snake v7.0</title>
-  <link rel="icon" href="snake/favicon/snake.ico" type="image/ico">
-  <style type="text/css">
-    @import url("https://fonts.googleapis.com/css?family=VT323");
+  <head>
+    <style>
+      p {
+        font-size: 20px;
+        color: blue;
+      }
+    </style>
+    <p>Snake v7.0</p>
+    <meta charset="UTF-8">
+    <title>Snake v7.0</title>
+    <link rel="icon" href="snake/favicon/snake.ico" type="image/ico">
+    <style type="text/css">
+      @import url("https://fonts.googleapis.com/css?family=VT323");
 
-    ::selection {
-      color: #FFFFFF;
-      background: transparent;
-    }
-
-    ::-moz-selection {
-      color: #FFFFFF;
-      background: transparent;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      font-family: "VT323";
-    }
-
-
-    a {
-
-      text-decoration: line;
-      font-size: 20pt;
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-
-    k {
-      font-size: 20px;
-      color: red;
-      margin-bottom: auto;
-    }
-
-    div.a {
-      color: #000000;
-      text-align: center;
-      font-size: 40px;
-    }
-
-    body {
-      background-color: #000000;
-    }
-
-    .wrap {
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    text {
-      height: 20 position: center
-    }
-
-    #help h1 {
-      width: 340px;
-      position: center;
-      margin-left: auto;
-      margin-right: auto;
-      font-family: "VT323";
-      color: #FFFFFF;
-    }
-
-    header {
-      width: 340px;
-      font-size: 0;
-      position: center;
-    }
-
-    canvas {
-      display: none;
-      border-style: solid;
-      border-width: 10px;
-      border-color: #FFFFFF;
-    }
-
-    canvas:focus {
-      outline: none;
-    }
-
-    /* Top Styles */
-    h1 {
-      display: block;
-      width: 100px;
-      font-size: 32px;
-      color: #FFFFFF;
-      -webkit-animation: logo-ani 1ms linear;
-      animation: logo-ani 1ms linear;
-      margin-bottom: 30px;
-
-    }
-
-    .score {
-      display: inline-block;
-      width: 240px;
-      font-size: 25px;
-      -webkit-animation: logo-ani 1ms linear;
-      animation: logo-ani 1ms linear;
-      color: blue;
-      text-align: right;
-      text-shadow: 4px 4px 4px red;
-    }
-
-    .score_value {
-      font-size: inherit;
-    }
-
-    /* All screens style */
-    #gameover a,
-    #setting a,
-    #menu a {
-      display: block;
-    }
-
-    #gameover a,
-    #setting a:hover,
-    #menu a:hover {
-      cursor: pointer;
-    }
-
-    #gameover a:hover::before,
-    #setting a:hover::before,
-    #menu a:hover::before {
-      content: "-->";
-      margin-right: 10px;
-    }
-
-    /* Menu Screen Style */
-    #menu {
-      display: block;
-      width: 340px;
-      padding-top: 95px;
-      padding-bottom: 95px;
-      font-size: 40px;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
-      color: orange;
-    }
-
-    #menu h2 {
-      -webkit-animation: logo-ani 1000ms ease-in infinite;
-      animation: logo-ani 1000ms ease-in infinite;
-      margin-bottom: 30px;
-
-    }
-
-    #menu a {
-      font-size: 30px;
-    }
-
-    @-webkit-keyframes logo-ani {
-      50% {
-        -webkit-transform: scale(1.3, 1.3);
+      ::selection {
+        color: #FFFFFF;
+        background: transparent;
       }
 
-      100% {
-        -webkit-transform: scale(1.0, 1.0);
-      }
-    }
-
-    @keyframes logo-ani {
-      50% {
-        transform: scale(1.3, 1.3);
+      ::-moz-selection {
+        color: #FFFFFF;
+        background: transparent;
       }
 
-      100% {
-        transform: scale(1.0, 1.0);
-      }
-    }
-
-    /* Game Over Screen Style */
-
-    #gameover {
-      display: none;
-      width: 340px;
-      padding-top: 95px;
-      padding-bottom: 95px;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
-      font-size: 30px;
-      color: blue;
-    }
-
-    li {
-      display: inline-block;
-      float: left;
-      white-space: 5px;
-    }
-
-    #gameover h2 {
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 50px;
-      cursor: help;
-      color: blue;
-      animation-duration: 3s;
-      animation-name: slidein;
-    }
-
-    @keyframes slidein {
-      from {
-        margin-left: 100%;
-        width: 300%;
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "VT323";
       }
 
-      to {
-        margin-left: 0%;
-        width: 100%;
+
+      a {
+
+        text-decoration: line;
+        font-size: 20pt;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
       }
-    }
 
-    #gameover p {
 
-      margin-top: 75px;
-      font-size: 20px;
-    }
+      k {
+        font-size: 20px;
+        color: red;
+        margin-bottom: auto;
+      }
 
-    /* Settings Screen Style */
-    #setting {
+      div.a {
+        color: #000000;
+        text-align: center;
+        font-size: 40px;
+      }
 
-      display: none;
-      width: 340px;
-      margin-left: auto;
-      margin-right: auto;
-      padding-top: 85px;
-      padding-bottom: 85px;
-      font-size: 30px;
-      color: red;
-      text-align: center;
-    }
+      body {
+        background-color: #000000;
+      }
 
-    #setting h2 {
+      .wrap {
+        margin-left: auto;
+        margin-right: auto;
+      }
 
-      margin-bottom: 15px;
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 30px;
-      cursor: pointer;
-      color: red;
-      text-shadow: 4px 4px 4px blue;
-    }
+      text {
+        height: 20 position: center
+      }
 
-    #setting p {
+      #help h1 {
+        width: 340px;
+        position: center;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: "VT323";
+        color: #FFFFFF;
+      }
 
-      margin-top: 10px;
-      font-size: 30px;
-    }
+      header {
+        width: 340px;
+        font-size: 0;
+        position: center;
+      }
 
-    #setting input {
+      canvas {
+        display: none;
+        border-style: solid;
+        border-width: 10px;
+        border-color: #FFFFFF;
+      }
 
-      display: none;
-      content: '-->';
-    }
+      canvas:focus {
+        outline: none;
+      }
 
-    #setting label {
+      /* Top Styles */
+      h1 {
+        display: block;
+        width: 100px;
+        font-size: 32px;
+        color: #FFFFFF;
+        -webkit-animation: logo-ani 1ms linear;
+        animation: logo-ani 1ms linear;
+        margin-bottom: 30px;
 
-      cursor: pointer;
-    }
+      }
 
-    #setting input:checked+label {
+      .score {
+        display: inline-block;
+        width: 240px;
+        font-size: 25px;
+        -webkit-animation: logo-ani 1ms linear;
+        animation: logo-ani 1ms linear;
+        color: blue;
+        text-align: right;
+      }
 
-      background-color: #000fff;
-      color: #FFFFFF;
-    }
+      .score_value {
+        font-size: inherit;
+      }
 
-    highlight {
+      /* All screens style */
+      #gameover a,
+      #setting a,
+      #menu a {
+        display: block;
+      }
 
-      size: 40px;
-      color: blue;
-    }
+      #gameover a,
+      #setting a:hover,
+      #menu a:hover {
+        cursor: pointer;
+      }
 
-    ul {
+      #gameover a:hover::before,
+      #setting a:hover::before,
+      #menu a:hover::before {
+        content: "-->";
+        margin-right: 10px;
+      }
 
-      display: inline-block;
-    }
-  </style>
-  <style>
-    b {
+      /* Menu Screen Style */
+      #menu {
+        display: block;
+        width: 340px;
+        padding-top: 95px;
+        padding-bottom: 95px;
+        font-size: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        color: orange;
+      }
 
-      font-size: 75px;
-      animation: color-change 10s infinite;
-    }
+      #menu h2 {
+        -webkit-animation: logo-ani 1000ms ease-in infinite;
+        animation: logo-ani 1000ms ease-in infinite;
+        margin-bottom: 30px;
 
-    @keyframes color-change {
-      0% {
+      }
+
+      #menu a {
+        font-size: 30px;
+      }
+
+      @-webkit-keyframes logo-ani {
+        50% {
+          -webkit-transform: scale(1.3, 1.3);
+        }
+
+        100% {
+          -webkit-transform: scale(1.0, 1.0);
+        }
+      }
+
+      @keyframes logo-ani {
+        50% {
+          transform: scale(1.3, 1.3);
+        }
+
+        100% {
+          transform: scale(1.0, 1.0);
+        }
+      }
+
+      /* Game Over Screen Style */
+
+      #gameover {
+        display: none;
+        width: 340px;
+        padding-top: 95px;
+        padding-bottom: 95px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-size: 30px;
+        color: blue;
+      }
+
+      li {
+        display: inline-block;
+        float: left;
+        white-space: 5px;
+      }
+
+      #gameover h2 {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        cursor: help;
+        color: blue;
+        animation-duration: 3s;
+        animation-name: slidein;
+      }
+
+      @keyframes slidein {
+        from {
+          margin-left: 100%;
+          width: 300%;
+        }
+
+        to {
+          margin-left: 0%;
+          width: 100%;
+        }
+      }
+
+      #gameover p {
+
+        margin-top: 75px;
+        font-size: 20px;
+      }
+
+      /* Settings Screen Style */
+      #setting {
+
+        display: none;
+        width: 340px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 85px;
+        padding-bottom: 85px;
+        font-size: 30px;
+        color: red;
+        text-align: center;
+      }
+
+      #setting h2 {
+
+        margin-bottom: 15px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        cursor: pointer;
         color: red;
       }
 
-      50% {
-        color: green;
+      #setting p {
+
+        margin-top: 10px;
+        font-size: 30px;
       }
 
-      100% {
+      #setting input {
+
+        display: none;
+        content: '-->';
+      }
+
+      #setting label {
+
+        cursor: pointer;
+      }
+
+      #setting input:checked+label {
+
+        background-color: #000fff;
+        color: #FFFFFF;
+      }
+
+      highlight {
+
+        size: 40px;
         color: blue;
       }
-    }
-  </style>
-  <style>
-    {
 
-      font-size: 75px;
-      animation: color-change 10s infinite;
-    }
+      ul {
 
-    @keyframes color-change {
-      0% {
-        color: red;
+        display: inline-block;
+      }
+    </style>
+    <style>
+      b {
+
+        font-size: 75px;
+        animation: color-change 10s infinite;
       }
 
-      50% {
-        color: green;
+      @keyframes color-change {
+        0% {
+          color: red;
+        }
+
+        50% {
+          color: green;
+        }
+
+        100% {
+          color: blue;
+        }
+      }
+    </style>
+    <style>
+      {
+
+        font-size: 75px;
+        animation: color-change 10s infinite;
       }
 
-      100% {
-        color: blue;
-      }
-    }
-  </style>
-  <br />
-  <header class="wrap">
-    <p class="score">Apples Eaten: <span id="score_value">0</span></p>
+      @keyframes color-change {
+        0% {
+          color: red;
+        }
 
+        50% {
+          color: green;
+        }
+
+        100% {
+          color: blue;
+        }
+      }
+    </style>
+    <br />
+    <header class="wrap">
+      <p class="score">Apples Eaten: <span id="score_value">0</span></p>
+  </head>
   </header>
   <canvas class="wrap" id="snake" width="420" height="420" tabindex="1"></canvas>
   <!-- Game Over Screen -->
@@ -376,22 +380,22 @@
   <!-- Main Menu Screen -->
   <div id="menu">
     <b>Snake</b>
-<style>
-.buttoncolor {
-  background-color: black;
-  border: none;
-  color: red;
-  text-align: center;
-  font-size: 20px;
-}
-</style>
+    <style>
+      .buttoncolor {
+        background-color: black;
+        border: none;
+        color: red;
+        text-align: center;
+        font-size: 20px;
+      }
+    </style>
     <a id="newgame_menu">Play</a>
     <a id="setting_menu">Settings</a>
-<script>
-  function onClick() {
-    alert("Use W A S D or arrow keys to move snake")
-  }
-</script>
+    <script>
+      function onClick() {
+        alert("Use W A S D or arrow keys to move snake")
+      }
+    </script>
     <button class="buttoncolor" align="bottom" onclick="onClick()">Controls (click me!)</button>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -837,5 +841,6 @@
     console.log(navigator.getGamepads());
   </script>
   </body>
+</div>
 
 </html>
